@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="WZ EDITOR 5.0">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<style>
+<!--
+	h1.title { font: bolder xx-large Arial,sans-serif; }
+//-->
+</style>
+<title>同期動作確認</title>
+<script type="text/JavaScript" src="./jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+
+<script type="text/JavaScript">
+	//jQuery.get("http://211.125.90.40/test_jquery_async/wait.php", function(data)
+	$.ajax({
+		url : "./wait.php",
+		async : false
+	}).responseText;
+</script>
+
+<div>読み込み完了</div>
+
+
+<hr>
+</body>
+</html>
